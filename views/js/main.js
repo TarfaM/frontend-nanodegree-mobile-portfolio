@@ -488,7 +488,8 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
   var numberOfEntries = times.length;
   var sum = 0;
   for (var i = numberOfEntries - 1; i > numberOfEntries - 11; i--) {
-    sum = sum + times[i].duration;
+    // sum = sum + times[i].duration;
+    sum = sum + times[i].duration * 5;
   }
   console.log("Average scripting time to generate last 10 frames: " + sum / 10 + "ms");
 }
