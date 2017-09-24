@@ -60,3 +60,8 @@ The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstra
 2. Minify Css/Js file as possible .
 3. declare your variable correctly Not inside loops .
 4. use PageSpeed locally to know more about performance issues.
+
+## What is the changes that is done to make website more faster
+1. change in JS files
+2. change in CSS file
+3. changes the size of images
