@@ -449,11 +449,12 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    var newwidth = (document.getElementsByClassName("randomPizzaContainer")[0].offsetWidth + dx) + 'px';
     var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
+    var newwidth = (document.getElementsByClassName("randomPizzaContainer")[0].offsetWidth + dx) + 'px';
     var i=0;
-    for (i; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
-          document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
+    var  randomPizzas = document.getElementsByClassName('randomPizzaContainer');
+    for (i; i < randomPizzas.length; i++) {
+          randomPizzas[i].style.width = newwidth;
     }
   }
 
@@ -469,8 +470,8 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -527,16 +528,18 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  var elem = document.createElement('img');
-  for (var i = 0; i < 26; i++) {
+  var elem ;
+  for (var i = 0; i < 200; i++) {
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
-    elem.style.height = 100/s+'px';
+    elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    elem=elem;
+    document.querySelector("#movingPizzas1").appendChild(elem);
+
     }
-  document.querySelector("#movingPizzas1").appendChild(elem);
+
   updatePositions();
 });

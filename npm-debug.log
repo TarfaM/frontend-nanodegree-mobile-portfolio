@@ -2,53 +2,43 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'ngrok',
-1 verbose cli   '–save-dev' ]
+1 verbose cli   '-g',
+1 verbose cli   'ngrok' ]
 2 info using npm@2.14.12
 3 info using node@v4.3.1
-4 verbose install initial load of /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/package.json
-5 verbose readDependencies loading dependencies from /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/package.json
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
 6 silly cache add args [ 'ngrok', null ]
 7 verbose cache add spec ngrok
-8 silly cache add args [ '–save-dev', null ]
-9 verbose cache add spec –save-dev
-10 silly cache add parsed spec Result {
-10 silly cache add   raw: 'ngrok',
-10 silly cache add   scope: null,
-10 silly cache add   name: null,
-10 silly cache add   rawSpec: 'ngrok',
-10 silly cache add   spec: '/Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok',
-10 silly cache add   type: 'local' }
-11 silly cache add parsed spec Result {
-11 silly cache add   raw: '–save-dev',
-11 silly cache add   scope: null,
-11 silly cache add   name: null,
-11 silly cache add   rawSpec: '–save-dev',
-11 silly cache add   spec: '/Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/–save-dev',
-11 silly cache add   type: 'local' }
-12 error addLocal Could not install /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/–save-dev
-13 silly addLocalTarball shasum (computed) ac915be673d4d060038e77beba7ec5c8d5754170
-14 verbose addTmpTarball /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok not in flight; adding
-15 verbose addTmpTarball validating metadata from /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
-16 verbose tar unpack /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
-17 verbose tar unpacking to /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2478-328365ec/unpack-5223bc1beb02
-18 silly gentlyRm /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2478-328365ec/unpack-5223bc1beb02 is being purged
-19 verbose gentlyRm don't care about contents; nuking /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2478-328365ec/unpack-5223bc1beb02
-20 silly gunzTarPerm modes [ '755', '644' ]
-21 error not a package /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
-22 error addLocal Could not install /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
-23 verbose stack Error: ENOENT: no such file or directory, open '/Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/–save-dev'
-23 verbose stack     at Error (native)
-24 verbose cwd /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio
-25 error Darwin 14.5.0
-26 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ngrok" "–save-dev"
-27 error node v4.3.1
-28 error npm  v2.14.12
-29 error path /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/–save-dev
-30 error code ENOENT
-31 error errno -2
-32 error syscall open
-33 error enoent ENOENT: no such file or directory, open '/Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/–save-dev'
-33 error enoent This is most likely not a problem with npm itself
-33 error enoent and is related to npm not being able to find a file.
-34 verbose exit [ -2, true ]
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'ngrok',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: 'ngrok',
+8 silly cache add   spec: '/Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok',
+8 silly cache add   type: 'local' }
+9 silly addLocalTarball shasum (computed) ac915be673d4d060038e77beba7ec5c8d5754170
+10 verbose addTmpTarball /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok not in flight; adding
+11 verbose addTmpTarball validating metadata from /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
+12 verbose tar unpack /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
+13 verbose tar unpacking to /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682
+14 silly gentlyRm /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682 is being purged
+15 verbose gentlyRm don't care about contents; nuking /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682
+16 silly gunzTarPerm modes [ '755', '644' ]
+17 error not a package /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
+18 error addLocal Could not install /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio/ngrok
+19 verbose stack Error: ENOENT: no such file or directory, open '/var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682/package.json'
+19 verbose stack     at Error (native)
+20 verbose cwd /Users/Home/Documents/Udicity-Front-End Webdevelopment /GitHub-Project/frontend-nanodegree-mobile-portfolio
+21 error Darwin 14.5.0
+22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "ngrok"
+23 error node v4.3.1
+24 error npm  v2.14.12
+25 error path /var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682/package.json
+26 error code ENOENT
+27 error errno -2
+28 error syscall open
+29 error enoent ENOENT: no such file or directory, open '/var/folders/fr/py5nn6bd0kg090yhm_tjs1300000gn/T/npm-2858-a076fbf4/unpack-c877134c8682/package.json'
+29 error enoent This is most likely not a problem with npm itself
+29 error enoent and is related to npm not being able to find a file.
+30 verbose exit [ -2, true ]
